@@ -92,7 +92,7 @@
                                     <a class="nav-link" href="#reservation">Registration</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                    <a class="nav-link" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                             <!-- Search Btn -->
@@ -111,11 +111,41 @@
     <section class="caviar-hero-area" id="home">
         <!-- Welcome Social Info -->
         <div class="welcome-social-info">
-            <link rel="stylesheet" href="css\others\font-awesome.min.css">
-            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <link rel=" stylesheet " href="https://use.fontawesome.com/releases/v5.9.0/css/all.css ">
+            <span class='fa-stack fa-lg'>
+                <a href="https://www.linkedin.com/in/elsoc-nith-494161209/">
+                    <i class='fas fa-circle fa-stack-2x'></i>
+                    <i class='fab fa-linkedin fa-stack-1x fa-inverse'></i>
+                </a>
+            </span> &nbsp;
+
+            <span class='fa-stack fa-lg'>
+                <a href="https://www.facebook.com/elsoc.nith/">
+                    <i class='fas fa-circle fa-stack-2x'></i>
+                    <i class='fab fa-facebook-f fa-stack-1x fa-inverse'></i>
+                </a>
+            </span>&nbsp;
+
+            <span class='fa-stack fa-lg'>
+                <a href="https://www.instagram.com/elsoc_nith/">
+                    <i class='fas fa-circle fa-stack-2x'></i>
+                    <i class='fab fa-instagram fa-stack-1x fa-inverse'></i>
+                </a>
+            </span>&nbsp;
+
+            <span class='fa-stack fa-lg'>
+                <a href="https://github.com/ELSOC-NITH/">
+                    <i class='fas fa-circle fa-stack-2x'></i>
+                    <i class='fab fa-github fa-stack-1x fa-inverse'></i>
+                </a>
+            </span>&nbsp;
+
+            <span class='fa-stack fa-lg'>
+                <a href="https://discord.gg/tAj2amteYc">
+                    <i class='fas fa-circle fa-stack-2x'></i>
+                    <i class='fab fa-discord fa-stack-1x fa-inverse'></i>
+                </a>
+            </span>
         </div>
         <!-- Welcome Slides -->
         <div class="caviar-hero-slides owl-carousel">
@@ -411,7 +441,55 @@
         </div>
     </section>
     <!-- ****** Reservation Area End ****** -->
+    &nbsp;
 
+    <!-- ***** Breadcumb Area Start ***** -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-4.jpg)">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content">
+                        <h2>Contact</h2>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">+1 234 567 890</a> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 14 Soho Square, London, United Kingdom</p>
+                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:someone@yoursite.com">lorem.ipsum@dolor.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Breadcumb Area End ***** -->
+
+    <!-- ***** Contact Area Start ***** -->
+    <div class="caviar-contact-area d-md-flex align-items-center" id="contact">
+        <div class="contact-form-area d-flex justify-content-end">
+            <div class="contact-form">
+                <div class="contact-form-title">
+                    <p>get in touch</p>
+                </div>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn caviar-btn"><span></span> Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="caviar-map-area wow fadeInRightBig" data-wow-delay="0.5s">
+            <div id="googleMap"></div>
+        </div>
+    </div>
+    <!-- ***** Contact Area End ***** -->
     <!-- ****** Footer Area Start ****** -->
     <footer class="caviar-footer-area">
         <div class="container">
@@ -441,6 +519,9 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
     <script src="js/others/plugins.js"></script>
+    <!-- Google Maps js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk"></script>
+    <script src="js/google-map/map-active.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
 </body>
