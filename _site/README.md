@@ -1,1 +1,0 @@
-# ELSOC-NITH.github.io
