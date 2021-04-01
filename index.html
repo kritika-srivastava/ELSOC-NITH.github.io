@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
@@ -411,53 +413,195 @@
                 <div class="section-heading">
                     <h2>Registration</h2>
                 </div>
-                <form action="#">
+                <form action="index.html" method="GET">
                     <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <input type="time" class="form-control">
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <input type="text" class="form-control" placeholder="Select Persons">
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <input type="text" class="form-control" placeholder="Last name">
+                        <div class="col-12">
+                            <label for="Name" class="form-label" style="font-size: 19px;">Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name">
                         </div>
                         <div class="col-12">
-                            <textarea name="reservation-message" class="form-control" id="reservationMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <label for="email" class="form-label" style="font-size: 19px;">Email address</label>
+
+                            <input type="email" class="form-control" placeholder="Email Address">
+
+                            <div id="emailHelp" class="form-text" style="font-size:12px;color:rgb(236, 4, 4)">
+                                <i>We'll never share your email with anyone else.</i></div>
                         </div>
+                        <br>
+                        </br>
+                        &nbsp;
+
+
+                        <br>
                         <div class="col-12">
-                            <button type="submit" class="btn caviar-btn"><span></span> Register for the
-                                competition.</button>
+                            <label for="Name" class="form-label" style="font-size: 19px;">Select Workshop</label>
+                            <div>
+                                <input list="Workshop" style="width:100%;">
+                                <datalist id="Workshop">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist>
+                            </div>
+                        </div> &nbsp;
+
+                        <div class="col-12 text-left">
+                            <button type="submit" class="btn caviar-btn"><span></span>Register</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+        </div>
+        </div>
         <div class="reservation-side-thumb wow fadeInRightBig" data-wow-delay="0.5s">
-            <img src="img/bg-img/hero-3.jpg" alt="">
+            <img src="https://thumbs.dreamstime.com/b/online-application-registration-form-graphics-concept-74312418.jpg" alt="">
         </div>
     </section>
     <!-- ****** Reservation Area End ****** -->
     &nbsp;
+    <!-- ****** FAQs Area Start ****** -->
+    <div class="container">
+        <link rel="stylesheet" href="css/others/timeline.css">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="my-5 text-center" style="font-size:36px;font-weight:bold;">FAQs</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav nav-tabs">
+                    <li><a data-toggle="tab" href="#tab1" aria-selected="true" class="active">Infrastructure</a></li>
+                    <li><a data-toggle="tab" href="#tab2" aria-selected="false">About Solodev</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade show active">
+                        <div class="accordion">
+                            <div class="card">
+                                <div class="card-header" id="infraOne">
+                                    <a href="#collapseOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <p class="mb-0">
+                                            What is the uptime for Solodev CMS?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="infraOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Using Amazon AWS technology which is an industry leader for reliability you will be able to experience an uptime in the vicinity of 99.95%.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- close card-->
+                            <div class="card">
+                                <div class="card-header" id="infraTwo">
+                                    <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <p class="mb-0">What technology does Solodev CMS use?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="infraTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Solodev CMS is built using PHP, Javascript, HTML and CSS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card-->
+                            <div class="card">
+                                <div class="card-header" id="infraThree">
+                                    <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <p class="mb-0">What browsers does Solodev CMS support?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="infraThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        We support the current and previous major releases of Google Chrome™, Firefox®, Safari®, Microsoft® Edge™, and Internet Explorer® on a rolling basis. Each time a new version is released, we begin supporting that version and stop supporting the third most
+                                        recent version.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card-->
+                        </div>
+                        <!-- accordion-->
+                    </div>
+                    <!-- tab 1-->
+                    <div id="tab2" class="tab-pane fade">
+                        <div class="accordion">
+                            <div class="card">
+                                <div class="card-header" id="aboutOne">
+                                    <a href="#collapseFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                        <p class="mb-0">What are the benefits of Solodev CMS?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="aboutOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        With Solodev CMS, you and your visitors will benefit from a finely-tuned technology stack that drives the highest levels of site performance, speed and engagement - and contributes more to your bottom line.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="aboutTwo">
+                                    <a href="#collapseFive" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                        <p class="mb-0">How easy is it to build a website with Solodev CMS?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="aboutTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Building a website is extremely easy. With a working knowledge of HTML and CSS you will be able to have a site up and running in no time.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="aboutThree">
+                                    <a href="#collapseSix" class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        <p class="mb-0">Can I get a personalized demonstration of Solodev CMS?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="aboutThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Yes, click here to request a demo and one of our representatives will contact you shortly to setup a time convenient to you.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-->
+                    </div>
+                    <!-- tab2 -->
+                </div>
+                <!-- tab content-->
+            </div>
+        </div>
+    </div>
+    <br>
+    </br>
+    <br>
+    </br>
+    <!-- ****** FAQs Area End ****** -->
 
     <!-- ***** Breadcumb Area Start ***** -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-4.jpg)">
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/contact-us.gif)">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content">
-                        <h2>Contact</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">+1 234 567 890</a> <a href="tel:+1234567890">+1 234 567 890</a></p>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> National Institute of Technology, Hamirpur (India)</p>
-                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:someone@yoursite.com">lorem.ipsum@dolor.com</a></p>
+                        <h2>Contact Us</h2>
+                        <p><i class="fa fa-phone-alt" aria-hidden="true"></i> +91-1234567890
+
+                        </p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a href="https://nith.ac.in/">National Institute of Technology, Hamirpur (India)</a></p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:someone@yoursite.com">lorem.ipsum@dolor.com</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>&nbsp;
+
     <!-- ***** Breadcumb Area End ***** -->
 
     <!-- ***** Contact Area Start ***** -->
@@ -465,18 +609,25 @@
         <div class="contact-form-area d-flex justify-content-end">
             <div class="contact-form">
                 <div class="contact-form-title">
-                    <p>Get in touch</p>
+                    <p style="font-size: 20px;">Get in touch</p>
                 </div>
                 <form action="#">
                     <div class="row">
                         <div class="col-12">
+                            <label for="Name" class="form-label" style="font-size: 20px;">Name</label>
                             <input type="text" class="form-control" placeholder="Your Name">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control" placeholder="Your Email">
+                            <label for="email" class="form-label" style="font-size: 20px;">Email address</label>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <div id="emailHelp" class="form-text" style="font-size:12px;color:rgb(236, 4, 4)">
+                                <i>We'll never share your email with anyone else.</i></div>
                         </div>
+                        &nbsp;
+
                         <div class="col-12">
-                            <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <label for="Name" class="form-label" style="font-size: 20px;">Query</label>
+                            <textarea name="message" class="form-control" id="Message" cols="30" rows="7" placeholder="Your Message"></textarea>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn caviar-btn"><span></span> Send Message</button>
@@ -485,10 +636,49 @@
                 </form>
             </div>
         </div>
+        &nbsp;
+
+        <!-- ****** MAP Area Start ****** -->
         <div class="caviar-map-area wow fadeInRightBig" data-wow-delay="0.5s">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" height="508" id="gmap_canvas" src="https://maps.google.com/maps?q=NIT%20hamirpur&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: center;
+                            height: 0px;
+                            width: 600px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">embed google maps in website</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 506px;
+                            width: 700px;
+                        }
+                        
+                        @media (max-width: 397px) {
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 506px;
+                                width: 380px;
+                            }
+                            iframe {
+                                width: 400px;
+                                height: 500px;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+            <!-- source***** https://google-map-generator.com/#enter***** -->
             <div id="googleMap"></div>
         </div>
     </div>
+    <!-- ***** MAP Area End ***** -->
     <!-- ***** Contact Area End ***** -->
     <!-- ****** Footer Area Start ****** -->
     <footer class="caviar-footer-area">
@@ -519,8 +709,7 @@
     <!-- All Plugins js -->
     <script src="js/others/plugins.js"></script>
     <!-- Google Maps js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk"></script>
-    <script src="js/google-map/map-active.js"></script>
+
     <!-- Active js -->
     <script src="js/active.js"></script>
 </body>
